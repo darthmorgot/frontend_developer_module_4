@@ -1,0 +1,28 @@
+{
+  "name": "interior-lounge",
+  "version": "1.0.0",
+  "description": "Проект «Interior Lounge» от HTML Academy, Профессия «Фронтенд-разработчик 2», Модуль 4. Подготовка вёрстки для CMS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env BUILD_TYPE=development webpack --config webpack.config/webpack.config.js",
+    "build": "cross-env BUILD_TYPE=production webpack --config webpack.config/webpack.config.js",
+    "start": "cross-env BUILD_TYPE=development webpack serve --config webpack.config/webpack.config.js"
+  },
+  "author": "Master",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "private": true,
+  "browserslist": [
+    "defaults"
+  ],
+  "engines": {
+    "node": "20"
+  }
+}
