@@ -1,2 +1,16 @@
-header
-  h1 Это шапка
+header.header.container
+  div.header__logo
+    a.header__link(href="#")
+      img.header__image(src=require("Images/logo.svg") width="42" height="47" alt="Логотип студии Interior Lounge.")
+      span.header__title Interior Lounge
+      span.header__info Дизайн общественных пространств
+  nav.header__nav.nav
+    ul.nav__list
+      li.nav__item Наши проекты
+        ul.nav__project-list
+          li.nav__project-item Tomazzi Hall
+          li.nav__project-item Lounge Hall
+          li.nav__project-item Astra Hall
+      li.nav__item Контакты
+  div.header__review-button
+    a.header__review-link(href="#reviews") Оставить отзыв
