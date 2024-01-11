@@ -1,12 +1,49 @@
 extends base
 
 block variables
-  - var title = 'Interior Lounge - Главная страница'
+  - var title = "Interior Lounge - Главная страница"
 
 block content
   main.main.main-container
-    h1 Interior Lounge Дизайн общественных пространств
+    section.project.container
+      h1 Дизайн общественных интерьеров
+      h2 Кейс клубного дома Tomazzi Hall
+      img(src=require("Images/hall@1x.jpg") width="1110" height="400" alt="Холл клубного дома Tomazzi Hall.")
+      p Создать объект, подобного которому в Санкт-Петербурге еще не было, — такую задачу поставил перед собой девелопер Interior Lounge, продумывая клубный дом Tomazzi Hall. Над экстерьером комплекса работала команда одного из крупнейших архитектурных  Бюро России — «Студия 11» разработал концепцию, а мы оформили интерьер 10 парадных и 3 лаунж-зон.
+      p Заказчик знал команду, следил за нашей деятельностью, поэтому никого больше не рассматривал — поручил дизайн парадных и лаунж-зон нам. Основными моментами, на которые мы ориентировались, стали:
+      ul
+        li Источники вдохновения планировалось искать в строгой геометрии, модерне и духе «ревущих двадцатых»;
+        li Необходимо было выдержать дорогой и одновременно элегантный стиль;
+        li Ключевой элемент дизайна любого общественного пространства — удобство для жителей.
+      img(src=require("Images/stairs@1x.jpg") width="540" height="350" alt="Вид на лестницу.")
+      img(src=require("Images/elevator@1x.jpg") width="540" height="350" alt="Вид на лифт.")
+      h2 Начало работы и источники вдохновения
+      p Над экстерьером комплекса работала команда одного из крупнейших архитектурных бюро России — «Студия 11», а мы оформили интерьер 10 парадных и 3 лаунж-зон.
+      p Заказчик знал команду, следил за нашей деятельностью, поэтому никого больше не рассматривал — поручил дизайн парадных и лаунж-зон нам.
+      p «Нам хотелось поддержать внешнюю архитектурную концепцию, но внутри добавить что-то необычное. Сделать некое подобие матрешки, чтобы все время открывались новые смыслы и элементы».
 
-    section
-      div.container
-        h2 This is section
+    section#reviews.reviews.container
+      h2.reviews__title Оставить отзыв
+      form.reviews__form.form
+        label.form__field
+          span.visually-hidden
+          textarea.form__textarea(name="user-review" placeholder="Расскажите, что вы думаете о проекте" rows="5"
+            required)
+        label.form__field
+          span.visually-hidden
+          input.form__input(type="text" name="user-name" placeholder="Ваше имя" required)
+        button.form__button(type="submit") Отправить
+        span.form__warning Отзыв будет добавлен после проверки модератором
+      div.reviews__list
+        blockquote.reviews__item
+          img.reviews__photo(src=require("Images/user1@1x.png") width="50" height="50" alt="Фотография пользователя.")
+          span.reviews__author Иван Грачев
+          span.reviews__text Очень самобытный и необычный проект.
+        blockquote.reviews__item
+          img.reviews__photo(src=require("Images/user2@1x.png") width="50" height="50" alt="Фотография пользователя.")
+          span.reviews__author Мария Рачинская
+          span.reviews__text Мне особенно понравилось решение лестничных клеток. Кружки вообще очень стильные!
+        blockquote.reviews__item
+          img.reviews__photo(src=require("Images/user3@1x.png") width="50" height="50" alt="Фотография пользователя.")
+          span.reviews__author Светлана
+          span.reviews__text Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не только в частных домах, но и в кафе, музеях, театрах. Я бы сходила!
