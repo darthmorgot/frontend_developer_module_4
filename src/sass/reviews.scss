@@ -1,0 +1,136 @@
+.reviews {
+  padding-top: 81px;
+  padding-bottom: 88px;
+  background: #F4EFE2;
+
+  &__title {
+    margin: 0 0 32px;
+    color: $hot-toddy;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__list {
+    padding-top: 56px;
+    border-top: 1px solid $golden-sand;
+  }
+
+  &__item {
+    display: flex;
+    margin: 0 0 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item:nth-child(2) &__photo {
+    margin-top: -36px;
+  }
+
+  &__item:nth-child(3) &__photo {
+    margin-top: -62px;
+  }
+
+  &__photo {
+    margin-top: -8px;
+    margin-right: 24px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__author {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.form {
+  &__textarea {
+    width: 100%;
+    height: 160px;
+    padding: 16px;
+    margin-bottom: 17px;
+    border-radius: 8px;
+    border: 1px solid $golden-sand;
+    background: $white;
+    font-size: 18px;
+    line-height: 27px;
+    resize: none;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+    }
+  }
+
+  &__input {
+    width: 540px;
+    padding: 16px 16px 19px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid $golden-sand;
+    background: $white;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+    }
+  }
+
+  &__button-wrapper {
+    margin-bottom: 56px;
+  }
+
+  &__button {
+    width: 285px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    margin-right: 16px;
+    border-radius: 8px;
+    background: $hot-toddy;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+
+    &:hover {
+      background: $yukon-gold;
+    }
+
+    &:active {
+      background: $antique-bronze;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+    }
+  }
+
+  &__warning {
+    display: inline-block;
+    margin-top: -4px;
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+}
