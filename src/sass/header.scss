@@ -1,3 +1,155 @@
 .header {
-  display: flex;
+  border-bottom: 1px solid $golden-sand;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    width: 263px;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    margin-right: 331px;
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+      outline-offset: -1px;
+    }
+  }
+
+  &__info {
+    padding-top: 6px;
+  }
+
+  &__image {
+    display: block;
+    margin-right: 18px;
+  }
+
+  &__title {
+    display: block;
+    color: $hot-toddy;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: block;
+    margin-top: -1px;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 13px;
+  }
+
+  &__review-link {
+    display: block;
+    align-self: center;
+    width: 191px;
+    padding: 6px 22px 5px 22px;
+    border-radius: 8px;
+    border: 1px solid $hot-toddy;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    &:hover {
+      background: $quarter-pearl-lusta;
+    }
+
+    &:active {
+      background: $early-dawn;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+      outline-offset: 2px;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 25px 0 22px;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 40px;
+  }
+
+  &__item--drop-list:focus-within &__project-list {
+    display: block;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+
+    &--icon {
+      padding-right: 18px;
+    }
+
+    &--icon::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      width: 13px;
+      height: 9px;
+      margin-left: 5px;
+      background: url("Images/icon-arrow-down.svg") no-repeat;
+    }
+
+    &:hover {
+      color: $hot-toddy;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+      outline-offset: 2px;
+    }
+  }
+
+  &__project-list {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin: 0;
+    padding: 29px 16px 30px 16px;
+    list-style: none;
+    background: $white;
+    box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.18), 0 2px 4px 0 rgba(97, 97, 97, 0.18);
+  }
+
+  &__project-item {
+    margin-bottom: 21px;
+  }
+
+  &__project-item:nth-child(2) {
+    margin-bottom: 22px;
+  }
+
+  &__project-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__project-link {
+    font-size: 18px;
+    line-height: normal;
+
+    &:hover {
+      color: $hot-toddy;
+    }
+
+    &:focus {
+      outline: 1px solid $golden-sand;
+      outline-offset: 2px;
+    }
+  }
 }
