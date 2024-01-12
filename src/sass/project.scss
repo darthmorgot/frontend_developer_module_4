@@ -1,0 +1,85 @@
+.project {
+  padding-top: 73px;
+  padding-bottom: 113px;
+
+  h1 {
+    margin: 0 0 32px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  h2 {
+    margin: 0 0 56px;
+    color: $hot-toddy;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  h2:last-of-type {
+    margin-bottom: 34px;
+    font-size: 32px;
+  }
+
+  img {
+    margin-bottom: 50px;
+    background: lightgray 0px -183.341px / 100% 169.67% no-repeat;
+  }
+
+  img:nth-of-type(2) {
+    margin-right: 30px;
+    margin-bottom: 81px;
+  }
+
+  img:last-of-type {
+    margin-bottom: 81px;
+  }
+
+  p {
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  p:first-of-type {
+    margin: 0 0 27px;
+    color: $hot-toddy;
+  }
+
+  p:last-of-type {
+    width: 920px;
+    margin: 0 auto;
+    margin-top: -8px;
+    padding: 40px 97px 39px 91px;
+    color: $hot-toddy;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 36px;
+    border-top: 1px solid $golden-sand;
+    border-bottom: 1px solid $golden-sand;
+  }
+
+  ul {
+    margin: 0 0 55px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 13px;
+      margin-right: 15px;
+      background: url("Images/icon-marker.svg") no-repeat;
+    }
+  }
+}
