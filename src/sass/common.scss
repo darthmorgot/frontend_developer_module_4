@@ -14,16 +14,27 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 1150px;
   min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 24px;
-  background: $white;
+  font-size: 18px;
+  line-height: 27px;
+  background: $quarter-pearl-lusta;
   color: $black;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 img {
@@ -57,13 +68,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
-.main-container {
-  flex-grow: 1;
 }
