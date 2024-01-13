@@ -1,7 +1,9 @@
 .project {
   padding-top: 73px;
   padding-bottom: 113px;
+}
 
+.wysiwyg-wrapper {
   h1 {
     margin: 0 0 32px;
     font-size: 48px;
@@ -38,8 +40,6 @@
 
   p {
     margin: 0 0 32px;
-    font-size: 18px;
-    line-height: 27px;
   }
 
   p:first-of-type {
@@ -48,9 +48,12 @@
   }
 
   p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  blockquote {
     width: 920px;
-    margin: 0 auto;
-    margin-top: -8px;
+    margin: 0 auto 32px;
     padding: 40px 97px 39px 91px;
     color: $hot-toddy;
     text-align: center;
@@ -62,16 +65,16 @@
     border-bottom: 1px solid $golden-sand;
   }
 
-  ul {
+  ul,
+  ol {
     margin: 0 0 55px;
     padding: 0;
   }
 
   li {
     margin-bottom: 8px;
+    padding-left: 27px;
     list-style: none;
-    font-size: 18px;
-    line-height: 27px;
 
     &::before {
       content: "";
@@ -79,6 +82,7 @@
       width: 12px;
       height: 13px;
       margin-right: 15px;
+      margin-left: -27px;
       background: url("Images/icon-marker.svg") no-repeat;
     }
   }
