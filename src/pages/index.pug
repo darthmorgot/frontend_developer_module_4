@@ -48,18 +48,20 @@ block content
       div.reviews__wrapper.wrapper
         div.reviews__list
           blockquote.reviews__item
-            img.reviews__photo(src=require("Images/user1@1x.png") width="50" height="50" alt="Фотография пользователя.")
-            div.reviews__info
-              span.reviews__author Иван Грачев
-              span.reviews__text Очень самобытный и необычный проект.
+            div.reviews__photo-wrapper
+              img.reviews__photo(src=require("Images/user1@1x.png") width="50" height="50" alt="")
+              span.visually-hidden Фотография пользователя.
+            p.reviews__name Иван Грачев
+            p.reviews__text Очень самобытный и необычный проект.
           blockquote.reviews__item
-            img.reviews__photo(src=require("Images/user2@1x.png") width="50" height="50"
-              alt="Фотография пользователя.")
-            div.reviews__info
-              span.reviews__author Мария Рачинская
-              span.reviews__text Мне особенно понравилось решение лестничных клеток. #[br] Кружки вообще очень стильные!
+            div.reviews__photo-wrapper
+              img.reviews__photo(src=require("Images/user2@1x.png") width="50" height="50" alt="")
+              span.visually-hidden Фотография пользователя.
+            p.reviews__name Мария Рачинская
+            p.reviews__text Мне особенно понравилось решение лестничных клеток. #[br] Кружки вообще очень стильные!
           blockquote.reviews__item
-            img.reviews__photo(src=require("Images/user3@1x.png") width="50" height="50" alt="Фотография пользователя.")
-            div.reviews__info
-              span.reviews__author Светлана
-              span.reviews__text Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не только в частных домах, но и в кафе, музеях, театрах. #[br] Я бы сходила!
+            div.reviews__photo-wrapper
+              img.reviews__photo(src=require("Images/user3@1x.png") width="50" height="50" alt="")
+              span.visually-hidden Фотография пользователя.
+            p.reviews__name Светлана
+            p.reviews__text Очень нравится, что в городе развиваются такие проекты. Надеюсь, такие проекты скоро будут не только в частных домах, но и в кафе, музеях, театрах. #[br] Я бы сходила!
