@@ -30,19 +30,25 @@ block content
           blockquote «Нам хотелось поддержать внешнюю архитектурную концепцию, но внутри добавить что-то необычное. Сделать некое подобие матрешки, чтобы все время открывались новые смыслы и элементы».
           p Добавим параграф после цитаты, чтобы посмотреть отступ после цитаты. Добавим параграф после цитаты, чтобы посмотреть отступ после цитаты. Добавим параграф после цитаты, чтобы посмотреть отступ после цитаты. Добавим параграф после цитаты, чтобы посмотреть отступ после цитаты. Добавим параграф после цитаты, чтобы посмотреть отступ после цитаты.
 
-    section#reviews.feedback-form
-      div.feedback-form__wrapper.wrapper
-        h2.feedback-form__title Оставить отзыв
-        form.feedback-form__form.form
-          label.form__field
-            span.visually-hidden Напишите о своих впечатлениях
-            textarea.form__textarea(name="user-review" placeholder="Расскажите, что вы думаете о проекте" rows="5" required)
-          label.form__field
-            span.visually-hidden Введите имя
-            input.form__input(type="text" name="user-name" placeholder="Ваше имя" required)
-          div.form__button-wrapper
-            button.form__button(type="submit") Отправить
-            span.form__warning Отзыв будет добавлен после #[br] проверки модератором
+    section#feedback.feedback
+      div.feedback__wrapper.wrapper
+        h2.feedback__title Оставить отзыв
+        div.feedback__form.feedback-form
+          div.wpcf7
+            form.wpcf7-form(action="" method="post" autocomplete="off")
+              p
+                span.wpcf7-form-control-wrap
+                  label.visually-hidden(for="user-text") Расскажите о своих впечатлениях.
+                  textarea#user-text.wpcf7-textarea(name="user-review" placeholder="Расскажите, что вы думаете о проекте" rows="5" required)
+              p
+                span.wpcf7-form-control-wrap
+                  label.visually-hidden(for="user-name") Введите свое имя.
+                  input#user-name.wpcf7-text(type="text" name="user-name" size="30" placeholder="Ваше имя" required)
+              div.feedback-form__submit-wrapper
+                p
+                  label.visually-hidden(for="form-submit") Отправить отзыв.
+                  input#form-submit.wpcf7-submit(type="submit" value="Отправить")
+                div.feedback-form__text Отзыв будет добавлен после #[br] проверки модератором
 
     section.reviews
       div.reviews__wrapper.wrapper
