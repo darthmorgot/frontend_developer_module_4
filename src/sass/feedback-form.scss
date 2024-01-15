@@ -1,7 +1,6 @@
-.feedback-form {
+.feedback {
   padding-top: 82px;
-  padding-bottom: 56px;
-  background: #F4EFE2;
+  background: $ecru-white;
 
   &__title {
     margin: 0 0 32px;
@@ -12,35 +11,21 @@
   }
 }
 
-.form {
-  &__textarea {
-    width: 100%;
-    height: 160px;
-    padding: 16px 16px 16px 15px;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    border: 1px solid $golden-sand;
-    background: $white;
-    line-height: 27px;
-    resize: none;
+.feedback-form {
+  padding-bottom: 56px;
+  border-bottom: 1px solid $golden-sand;
 
-    &::placeholder {
-      opacity: 0.5;
-    }
-
-    &:focus {
-      outline: 1px solid $golden-sand;
-    }
+  p {
+    margin: 0;
   }
 
-  &__input {
+  .wpcf7-text {
     width: 540px;
     padding: 16px 16px 19px 15px;
     margin-bottom: 24px;
     border-radius: 8px;
     border: 1px solid $golden-sand;
     background: $white;
-    line-height: 27px;
 
     &::placeholder {
       opacity: 0.5;
@@ -51,35 +36,66 @@
     }
   }
 
-  &__button {
-    width: 285px;
-    padding-top: 20px;
-    padding-bottom: 17px;
-    margin-right: 16px;
-    border-radius: 8px;
-    background: $hot-toddy;
-    color: #FFF;
-    font-weight: 500;
-    line-height: 27px;
-
-    &:hover {
-      background: $yukon-gold;
-    }
-
-    &:active {
-      background: $antique-bronze;
-    }
-
-    &:focus {
-      outline: 1px solid $golden-sand;
-    }
+  &__submit-wrapper {
+    display: flex;
+    align-items: center;
   }
 
-  &__warning {
+  &__text {
     display: inline-block;
-    margin-top: -3px;
+    margin-top: 1px;
     font-size: 12px;
     line-height: 18px;
     vertical-align: middle;
+  }
+}
+
+.wpcf7-text {
+  line-height: 27px;
+}
+
+.wpcf7-textarea {
+  width: 100%;
+  height: 160px;
+  padding: 16px 16px 16px 15px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid $golden-sand;
+  background: $white;
+  line-height: 27px;
+  resize: none;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px solid $golden-sand;
+  }
+}
+
+.wpcf7-submit {
+  width: 285px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 8px;
+  background: $hot-toddy;
+  color: $white;
+  font-weight: 500;
+  line-height: 27px;
+  cursor: pointer;
+
+  &:hover {
+    background: $yukon-gold;
+  }
+
+  &:active {
+    background: $antique-bronze;
+  }
+
+  &:focus {
+    outline: 1px solid $golden-sand;
   }
 }
