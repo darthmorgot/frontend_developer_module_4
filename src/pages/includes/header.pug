@@ -1,20 +1,26 @@
 header.header
-  nav.header__nav.nav.wrapper
-    a.header__logo(href="#")
-      img.header__image(src=require("Images/logo.svg") width="42" height="47" alt="Логотип студии Interior Lounge.")
-      div.header__info
-        span.header__title Interior Lounge
-        span.header__description Дизайн общественных пространств
-    ul.nav__list
-      li.nav__item.nav__item--drop-list
-        div.nav__link.nav__link--icon(tabindex="0") Наши проекты
-        ul.nav__project-list
-          li.nav__project-item
-            a.nav__project-link(href="#") Tomazzi Hall
-          li.nav__project-item
-            a.nav__project-link(href="#") Lounge Hall
-          li.nav__project-item
-            a.nav__project-link(href="#") Astra Hall
-      li.nav__item
-        a.nav__link(href="#") Контакты
-    a.header__review-link(href="#feedback") Оставить отзыв
+  div.wrapper
+    div.header__wrapper
+      div.header__logo-wrapper
+        a.header__logo(href="#")
+          img.header__image(src=require("Images/logo.svg") width="42" height="47" alt="Логотип студии Interior Lounge.")
+          div.header__info
+            span.header__title Interior Lounge
+            span.header__description Дизайн общественных пространств
+      div.header__menu-wrapper
+        nav.header__nav.main-nav
+          div.menu-primary-container
+            ul.menu
+              li.menu-item.menu-item-has-children
+                a(href="#") Наши проекты
+                ul.sub-menu
+                  li.menu-item.current-menu-item
+                    a(href="#") Tomazzi Hall
+                  li.menu-item
+                    a(href="#") Lounge Hall
+                  li.menu-item
+                    a(href="#") Astra Hall
+              li.menu-item
+                a(href="#") Контакты
+              li.menu-item.menu-item-feedback
+                a(href="#feedback") Оставить отзыв
